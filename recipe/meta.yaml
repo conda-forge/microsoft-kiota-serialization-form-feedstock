@@ -1,5 +1,5 @@
 {% set name = "microsoft-kiota-serialization-form" %}
-{% set version = "1.6.1" %}
+{% set version = "1.6.2" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/microsoft_kiota_serialization_form-{{ version }}.tar.gz
-  sha256: ea2594cdb10cfb2cc64355d76e30db28bcbae42e8acba196b40da2cd6f19dd0a
+  sha256: e03263a851d17b66e20f083f1d95886eec2652a5fdcce7873c0033a7362b8b3e
 
 build:
   noarch: python
