@@ -1,5 +1,5 @@
 {% set name = "microsoft-kiota-serialization-form" %}
-{% set version = "1.7.0" %}
+{% set version = "1.7.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/microsoft_kiota_serialization_form-{{ version }}.tar.gz
-  sha256: fb5cb2609052a556b8e9b44b5fb63871212bb5c1d2b8b2cd8b8bddf1674844a7
+  sha256: 18858f4349f9a25e489c6a7c422774b10bbcc39df063b359c2942308d54035eb
 
 build:
   noarch: python
@@ -22,7 +22,7 @@ requirements:
   run:
     - python >={{ python_min }},<4.0
     - microsoft-kiota-abstractions
-    - pendulum >=3.0.0b1
+    - pendulum >=3.0.0
 
 test:
   imports:
