@@ -1,5 +1,5 @@
 {% set name = "microsoft-kiota-serialization-form" %}
-{% set version = "1.9.0" %}
+{% set version = "1.9.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/microsoft_kiota_serialization_form-{{ version }}.tar.gz
-  sha256: e9701bd905baa9788fc5d2c9ba80f083843308a1d02bf44f630bc0319162925e
+  sha256: 58b81eca5e0ad66bcbd6a4b65ba91e6255d3510f4c4f576fb4f5e83ca9a310c3
 
 build:
   noarch: python
@@ -21,7 +21,7 @@ requirements:
     - poetry-core >=1.0.0
   run:
     - python >={{ python_min }},<4.0
-    - microsoft-kiota-abstractions
+    - microsoft-kiota-abstractions 1.9.1
 
 test:
   imports:
