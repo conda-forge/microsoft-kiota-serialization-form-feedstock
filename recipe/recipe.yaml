@@ -1,6 +1,6 @@
 context:
   name: microsoft-kiota-serialization-form
-  version: "1.10.1"
+  version: 1.14.1
 
 package:
   name: ${{ name|lower }}
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/microsoft_kiota_serialization_form-${{ version }}.tar.gz
-  sha256: 0bf8415b22998cdf81bf062b92b24e550b0c7874b0d2b52264ec6eb6f7caf76b
+  sha256: 4ae3945a780147f739ed3ec13e74b5d9533297d2dcd1f6e4fe9b991a7e52104f
 
 build:
   noarch: python
@@ -23,7 +23,7 @@ requirements:
   run:
     - python >=${{ python_min }},<4.0
     - microsoft-kiota-abstractions ${{ version }}.*
-
+    - microsoft-kiota-abstractions >=1.11.1,<2.0.0
 tests:
   - python:
       imports:
